@@ -4,6 +4,7 @@ This is a simple web project for Também Studio, showcasing a construction page 
 
 ## Project Structure
 
+```
 tbm-studio/
 ├── index.html
 ├── src/
@@ -16,6 +17,8 @@ tbm-studio/
 │ │ └── scripts.js
 │ └── styles/
 │ └── style.css └── README.md
+
+```
 
 ## Files
 
@@ -31,19 +34,17 @@ The CSS file that contains the styles for the webpage, including layout, typogra
 
 The JavaScript file that adds interactivity to the webpage, such as changing the emoji image on hover.
 
-### open-new.svg
-
-An SVG icon used in the "Ver trabalhos" link.
-
 ## Setup
 
 1. Clone the repository:
+
    ```sh
    git clone <repository-url>
    ```
-2. Navigate to the project directory:
+
+2. Navigate to the project directory of your choice:
    ```sh
-   cd taborda
+   cd  <your-directory>
    ```
 3. Open `index.html` in your web browser to view the webpage.
 
