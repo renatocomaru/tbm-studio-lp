@@ -9,7 +9,7 @@
 /* Estilos principais */
 body {
   min-height: 100vh;
-  background-color: #fcfaf3; /* Cor de fundo */
+  background-color: #fcfaf3;
   color: #242424;
   text-align: center;
 }
@@ -115,7 +115,7 @@ header {
   font-size: 1.5rem;
   color: #242424;
   text-decoration: none;
-  background-color: #f9f6f1;
+  background-color: transparent;
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
 
