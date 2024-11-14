@@ -2,6 +2,8 @@
 
 This is a simple web project for Também Studio, showcasing a construction page with some interactive elements.
 
+![Imagem de preview do site](https://i.imgur.com/fteOOIf.png)
+
 ## Project Structure
 
 ```
