@@ -92,6 +92,7 @@ header {
   font-family: "work-sans";
   font-weight: 400;
   margin: 3rem;
+  line-height: 70px;
 
   .uptitle {
     display: flex;
@@ -102,7 +103,7 @@ header {
 .brick-icon {
   width: 300px;
   height: auto;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   margin-top: -2rem;
   position: sticky;
 }
@@ -193,10 +194,11 @@ header {
 
 @media screen and (max-width: 1280px) {
   .construction-text {
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 50px;
   }
   .brick-icon {
-    width: 200px;
+    width: 220px;
   }
 }
 
@@ -209,6 +211,7 @@ header {
   }
   .sorry-for {
     margin-top: 0;
+    font-size: 1rem;
   }
   .status-message {
     font-size: 0.8rem;
@@ -216,7 +219,8 @@ header {
   }
   .construction-text {
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 60px;
   }
   .uptitle {
     flex-direction: column;
@@ -225,6 +229,8 @@ header {
   }
   .brick-icon {
     margin-top: 0;
+    width: 300px;
+    margin-left: 2rem;
   }
 
   .footer {
