@@ -16,8 +16,7 @@ body {
 
 header {
   width: 100%;
-  padding: 1rem;
-  font-weight: bold;
+  padding: 1rem 32px;
   font-size: 1.2rem;
 }
 
@@ -26,18 +25,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
 
   .tambem {
     font-size: 3rem;
     color: #242424;
     transform: scaleX(0.8);
     font-family: "libre-caslon-display";
+    font-weight: 600;
   }
   .logo {
     font-size: 2rem;
     color: #242424;
     text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 50px;
   }
 
   .studio {
@@ -46,6 +48,7 @@ header {
     transform: scaleX(0.9);
     text-decoration: none;
     font-family: "libre-caslon-display";
+    font-weight: 600;
   }
 }
 .faded-border {
@@ -143,7 +146,7 @@ header {
   height: auto;
   transition: transform 0.3s;
   position: fixed;
-  right: 20px;
+  right: 32px;
   bottom: 70px;
   cursor: pointer;
 }
