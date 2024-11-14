@@ -190,3 +190,53 @@ header {
   visibility: visible;
   opacity: 1;
 }
+
+@media screen and (max-width: 400px) {
+  .sorry-for {
+    margin-top: 0;
+  }
+  .status-message {
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
+  .construction-text {
+    font-size: 2rem;
+  }
+  .uptitle {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .brick-icon {
+    margin-top: 0;
+  }
+
+  .footer {
+    justify-content: center;
+    height: 15vh;
+  }
+
+  .emoji-container {
+    margin-top: 50px;
+  }
+
+  .thinking-face {
+    position: unset;
+  }
+
+  .tooltip {
+    position: unset;
+    right: unset;
+    bottom: unset;
+    transform: unset;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .tambem {
+    visibility: hidden;
+  }
+  .studio {
+    visibility: hidden;
+  }
+}
