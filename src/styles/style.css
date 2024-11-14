@@ -191,7 +191,7 @@ header {
   opacity: 1;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .header {
     padding: 1rem 16px;
   }
@@ -241,10 +241,20 @@ header {
     margin-top: 20px;
   }
 
+  .tooltip::after {
+    top: -8px;
+    left: 50%;
+  }
+
   .tambem {
     visibility: hidden;
+    width: 1px;
+  }
+  .logo {
+    margin-right: 0 !important;
   }
   .studio {
     visibility: hidden;
+    width: 1px;
   }
 }
