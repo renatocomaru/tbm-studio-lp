@@ -203,6 +203,9 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    min-height: 120vh;
+  }
   .header {
     padding: 1rem 16px;
   }
