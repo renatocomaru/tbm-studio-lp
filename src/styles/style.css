@@ -257,7 +257,7 @@ header {
   }
 
   .tooltip::after {
-    top: -8px;
+    /* top: 110px; */
     left: 50%;
   }
 
