@@ -192,6 +192,12 @@ header {
 }
 
 @media screen and (max-width: 400px) {
+  .header {
+    padding: 1rem 16px;
+  }
+  .navbar {
+    height: 5vh;
+  }
   .sorry-for {
     margin-top: 0;
   }
@@ -200,6 +206,7 @@ header {
     margin-top: 20px;
   }
   .construction-text {
+    margin: 2rem;
     font-size: 2rem;
   }
   .uptitle {
