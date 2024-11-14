@@ -191,6 +191,15 @@ header {
   opacity: 1;
 }
 
+@media screen and (max-width: 1280px) {
+  .construction-text {
+    font-size: 3rem;
+  }
+  .brick-icon {
+    width: 200px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header {
     padding: 1rem 16px;
