@@ -177,7 +177,7 @@ header {
   }
 }
 
-.tooltip::after {
+/* .tooltip::after {
   content: "";
   position: absolute;
   right: -8px;
@@ -185,7 +185,7 @@ header {
   border-width: 8px;
   border-style: solid;
   border-color: transparent transparent transparent #e5e5e5;
-}
+} */
 
 .emoji-container:hover .tooltip {
   visibility: visible;
