@@ -153,6 +153,7 @@ header {
 }
 
 .tooltip {
+  text-align: left;
   visibility: hidden;
   opacity: 0;
   background-color: #e5e5e5;
@@ -162,10 +163,10 @@ header {
   right: 80px;
   bottom: 10px;
   transform: translateY(-50%);
-  width: 400px;
+  width: 390px;
   transition: opacity 0.3s ease;
   .emoji-phrase {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: #242424;
     font-weight: 300;
     text-align: left;
