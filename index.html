@@ -7,9 +7,10 @@
     <link rel="icon" type="image/x-icon" href="/tambem.ico" />
     <link rel="stylesheet" href="/src/styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xcq6olh.css" />
-    <script src="/src/scripts/scripts.js"></script>
   </head>
   <body>
+    <script src="/src/scripts/scripts.js" type="module"></script>
+    <script src="/src/scripts/brick.js" type="module"></script>
     <header>
       <div class="navbar">
         <div class="tambem">
@@ -37,26 +38,27 @@
           <p>EM</p>
         </div>
         <div class="downtitle">
-          <img
-            src="/src/assets/tijolo.gif"
-            alt="Gif de tijolo"
-            class="brick-icon"
-          />
+          <div class="brick-icon">
+            <div id="3d-brick"></div>
+          </div>
           <p>CONSTRUÇÃO</p>
         </div>
       </div>
-      <a
-        href="https://tinyurl.com/edutaborda"
-        target="_blank"
-        class="link-trabalhos"
-      >
-        <span class="see-works">Ver trabalhos</span>
-        <img
-          class="open-new-tab"
-          src="/src/assets/svg/open-new.svg"
-          alt="Open New Tab"
-        />
-      </a>
+
+      <div>
+        <a
+          href="https://tinyurl.com/edutaborda"
+          target="_blank"
+          class="link-trabalhos"
+        >
+          <span class="see-works">Ver trabalhos</span>
+          <img
+            class="open-new-tab"
+            src="/src/assets/svg/open-new.svg"
+            alt="Open New Tab"
+          />
+        </a>
+      </div>
     </div>
 
     <div class="footer">

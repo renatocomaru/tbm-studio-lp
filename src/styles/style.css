@@ -117,9 +117,16 @@ header {
 .brick-icon {
   width: 300px;
   height: auto;
-  /* margin-left: 2rem; */
+  margin-right: 2rem;
   margin-top: -2rem;
   position: sticky;
+}
+
+#3d-brick {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: transparent;
 }
 
 .link-trabalhos {
