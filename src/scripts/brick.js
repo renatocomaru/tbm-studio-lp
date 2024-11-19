@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Animation loop
       const animate = () => {
         requestAnimationFrame(animate);
-        object.rotation.y += 0.01; // Rotate the object
+        object.rotation.y += 0.02; // Rotate the object
         renderer.render(scene, camera);
       };
       animate();
