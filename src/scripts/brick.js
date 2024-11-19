@@ -3,7 +3,6 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Three.js setup
-  const objectUrl = "/3d/brick1.gltf";
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(1, 300 / 300, 0.1, 1000);
   const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -16,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const loader = new GLTFLoader();
   loader.load(
-    objectUrl,
+    "/src/assets/3d/brick1.gltf",
     (gltf) => {
       const object = gltf.scene;
       object.scale.set(1, 1, 1); // Increase the scale of the object
