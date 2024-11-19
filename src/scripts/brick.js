@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const loader = new GLTFLoader();
   loader.load(
-    "/src/assets/3d/brick1.gltf",
+    "/3d/brick1.gltf",
     (gltf) => {
       const object = gltf.scene;
       object.scale.set(1, 1, 1); // Increase the scale of the object
