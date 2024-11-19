@@ -7,10 +7,16 @@
     <link rel="icon" type="image/x-icon" href="/tambem.ico" />
     <link rel="stylesheet" href="/src/styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xcq6olh.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
   </head>
   <body>
-    <script src="/src/scripts/scripts.js" type="module"></script>
-    <script src="/src/scripts/brick.js" type="module"></script>
     <header>
       <div class="navbar">
         <div class="tambem">
@@ -39,7 +45,7 @@
         </div>
         <div class="downtitle">
           <div class="brick-icon">
-            <div class="threedbrick"></div>
+            <div class="threedbrick" id="3d-brick"></div>
           </div>
           <p>CONSTRUÇÃO</p>
         </div>
@@ -79,5 +85,7 @@
         </div>
       </div>
     </div>
+    <script src="/src/scripts/scripts.js" type="module"></script>
+    <script src="/src/scripts/brick.js" type="module"></script>
   </body>
 </html>
