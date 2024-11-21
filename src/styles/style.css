@@ -106,6 +106,15 @@ header {
     height: 5px;
     background-color: #242424;
   }
+
+  .bar2 {
+    visibility: hidden;
+    margin: 0 20px;
+    width: 100%;
+    height: 5px;
+    background-color: #242424;
+  }
+
   .downtitle {
     margin-top: 50px;
     display: flex;
@@ -123,6 +132,12 @@ header {
 }
 
 .threedbrick {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+#3d-brick {
   width: 300px;
   height: 300px;
   margin: 0 auto;
@@ -221,8 +236,13 @@ header {
     font-size: 4rem;
     line-height: 50px;
   }
+  .threedbrick {
+    width: 250px;
+    height: auto;
+  }
   .brick-icon {
-    width: 220px;
+    width: 250px;
+    height: auto;
   }
 }
 
@@ -244,20 +264,46 @@ header {
     font-size: 0.8rem;
     margin-top: 20px;
   }
+  .main-content {
+    align-items: normal;
+  }
   .construction-text {
-    margin: 2rem;
+    margin: 3rem 0;
     font-size: 3rem;
     line-height: 60px;
   }
+  .bar {
+    height: 3px !important;
+  }
+
+  .downwrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bar2 {
+    visibility: visible !important;
+    padding: 0 20px;
+    margin: 0 10px !important;
+    width: 100% !important;
+    height: 3px !important;
+    background-color: #242424 !important;
+  }
+
   .uptitle {
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 0;
     margin-top: 0;
   }
-  .brick-icon {
-    margin-top: 0;
-    width: 300px;
-    margin-left: 2rem;
+
+  .downtitle {
+    flex-direction: column;
+  }
+
+  .threedbrick {
+    width: 150px;
+    height: auto;
   }
 
   .footer {
