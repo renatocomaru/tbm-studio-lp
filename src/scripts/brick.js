@@ -10,14 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const textureLoader = new THREE.TextureLoader();
   const textures = {
-    albedo: textureLoader.load("/src/assets/textures/redbricks2b-albedo.png"),
-    ao: textureLoader.load("/src/assets/textures/redbricks2b-ao.png"),
-    height: textureLoader.load("/src/assets/textures/redbricks2b-height4b.png"),
+    albedo: textureLoader.load("/src/assets/textures/red-clay-wall-albedo.png"),
+    ao: textureLoader.load("/src/assets/textures/red-clay-wall-ao.png"),
+    height: textureLoader.load("/src/assets/textures/red-clay-wall-height.png"),
     metalness: textureLoader.load(
-      "/src/assets/textures/redbricks2b-metalness.png"
+      "/src/assets/textures/red-clay-wall-metallic.png"
     ),
-    normal: textureLoader.load("/src/assets/textures/redbricks2b-normal.png"),
-    rough: textureLoader.load("/src/assets/textures/redbricks2b-rough.png"),
+    normal: textureLoader.load(
+      "/src/assets/textures/red-clay-wall-normal-ogl.png"
+    ),
+    rough: textureLoader.load(
+      "/src/assets/textures/red-clay-wall-roughness.png"
+    ),
   };
 
   const loader = new GLTFLoader();
@@ -57,18 +61,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 
-  const light = new THREE.DirectionalLight(0xf8c5a5, 2.5);
+  const light = new THREE.DirectionalLight(0xbc4a3c, 5);
   light.position.set(1, 1, 1).normalize();
   scene.add(light);
 
-  const ambientLight = new THREE.AmbientLight(0x000000);
+  const ambientLight = new THREE.AmbientLight(0x242424);
   scene.add(ambientLight);
 
-  const pointLight = new THREE.PointLight(0xd2691e, 1, 1, 1);
-  pointLight.position.set(5, 5, 5);
+  const pointLight = new THREE.PointLight(0xffffff, 1, 0, 2);
+  pointLight.position.set(1, 1, 1);
   scene.add(pointLight);
 
-  const spotLight = new THREE.SpotLight(0xd2691e);
+  const spotLight = new THREE.SpotLight(0xffffff);
   spotLight.position.set(10, 10, 10);
   spotLight.angle = Math.PI / 6;
   spotLight.penumbra = 0.1;
