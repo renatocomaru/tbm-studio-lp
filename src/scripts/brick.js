@@ -85,9 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.innerWidth < 768) {
       renderer.setSize(200, 200);
       camera.position.z = 8;
-    } else if (window.innerWidth <= 1280) {
+    } else if (window.innerWidth <= 1367) {
       renderer.setSize(250, 250);
-      camera.position.z = 9;
+      camera.position.z = 8;
     } else {
       renderer.setSize(300, 300);
       camera.position.z = 8;
