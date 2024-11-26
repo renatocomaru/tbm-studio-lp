@@ -4,23 +4,27 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 document.addEventListener("DOMContentLoaded", () => {
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(1.3, 300 / 300, 0.1, 1000);
-  const renderer = new THREE.WebGLRenderer({ alpha: true });
+  const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
   renderer.setSize(200, 200);
   document.getElementById("3d-brick").appendChild(renderer.domElement);
 
   const textureLoader = new THREE.TextureLoader();
   const textures = {
-    albedo: textureLoader.load("/src/assets/textures/red-clay-wall-albedo.png"),
-    ao: textureLoader.load("/src/assets/textures/red-clay-wall-ao.png"),
-    height: textureLoader.load("/src/assets/textures/red-clay-wall-height.png"),
+    albedo: textureLoader.load(
+      "/src/assets/textures/red-clay-wall-albedo.webp"
+    ),
+    ao: textureLoader.load("/src/assets/textures/red-clay-wall-ao.webp"),
+    height: textureLoader.load(
+      "/src/assets/textures/red-clay-wall-height.webp"
+    ),
     metalness: textureLoader.load(
-      "/src/assets/textures/red-clay-wall-metallic.png"
+      "/src/assets/textures/red-clay-wall-metallic.webp"
     ),
     normal: textureLoader.load(
-      "/src/assets/textures/red-clay-wall-normal-ogl.png"
+      "/src/assets/textures/red-clay-wall-normal-ogl.webp"
     ),
     rough: textureLoader.load(
-      "/src/assets/textures/red-clay-wall-roughness.png"
+      "/src/assets/textures/red-clay-wall-roughness.webp"
     ),
   };
 
